@@ -4,4 +4,4 @@
 
 接口具体内容,访问:https://www.showdoc.cc/starbug?page_id=4996924965848147
 
-访问密码: 123456
+访问密码: 123456git@gitee.com:starbug-gitee/JWTTokenLogin.git

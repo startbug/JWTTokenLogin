@@ -53,7 +53,6 @@ public class BeanConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
-//                .host("www.starbug.vip")
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.ggs.exam.controller"))
