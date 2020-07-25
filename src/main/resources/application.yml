@@ -1,0 +1,35 @@
+mybatis:
+  mapper-locations: classpath:mappers/*Mapper.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.ggs.exam.pojo
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+#    password: "!Lhh1285226024"
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+  thymeleaf:
+    prefix: classpath:/templates/pages/
+    suffix: .html
+    cache: false
+#  redis:
+#    password: 123456
+#    port: 6379
+#    host: localhost
+logging:
+  level:
+    org.springframework:
+      web: debug
+      security: debug
+server:
+  servlet:
+    context-path: /book_manage
